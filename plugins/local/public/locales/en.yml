@@ -1,0 +1,21 @@
+en:
+  brand:
+    title: University of Edinburgh Archive and Manuscript Collections
+    home: Home
+    welcome_message: University of Edinburgh Archive and Manuscript Collections
+    welcome_search_label: "Archives and manuscripts are the unique documentary sources which are essential for understanding a wide range of people, places, knowledge and learning.  Our collections have a range of strengths including Scottish culture, the research and business of the University of Edinburgh, and literary, scientific and medical work from across the world."
+    welcome_search_label1: "This catalogue covers both Special Collections and Lothian Health Services Archive (LHSA) within the Centre for Research Collections and contains over 30,000 individual catalogue records.  We are currently adding new content as well as retro-converting and migrating content from other systems, so this number will increase."
+    welcome_search_label2: "Not everything is as complete and as perfect as we would like but we have decided to make it available anyway to improve access to our collections while adding further content and improvement to existing content is ongoing."
+
+  instance: &instance_attributes
+    instance_type: Type
+    instance_type_tooltip: |
+        <p>A designation of the manifestation for the described materials. The instance designation is optional, but required to open and complete a container record for the material described.</p>
+        <p>Values in this Controlled Value List may be modified.</p>
+    digital_object: Digital Object
+    _plural: Catalogue Entries
+    _singular: Catalogue Entry
+
+  file_version:
+     _plural: Online Access
+     _singular: Online Access

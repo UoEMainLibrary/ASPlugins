@@ -1,0 +1,29 @@
+#header div.uoelogo {
+    text-align: left;
+}
+
+div.uoelogo, .uoeaslogo {
+        padding-top: 19px;
+        padding-bottom: 19px;
+}
+
+
+@media (max-width: 556px) {
+	
+	.uoeaslogo {
+             display:none;
+        }
+
+
+}
+
+
+#header .row {
+    display:none;
+}
+
+
+
+
+
+
