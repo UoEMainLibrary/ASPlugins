@@ -1,23 +1,30 @@
 ASPlugins
 =========
 
-Archives Space Plugins for University of Edinburgh
+<h3>Archives Space Plugins for University of Edinburgh</h3>
 
-Before each upgrade, check to see if the left file has changed. If it has, recreate the plugin based on the new code and the changes from the commit history for the file on the right.
+<h3>Before each upgrade, check to see if the left file has changed. If it has, recreate the plugin based on the new code and the changes from the commit history for the file on the right.</h3>
 
-backend/app/model/ead_exporter.rb------------------>plugins/local/backend/model/ead_exporter.rb _
+backend/app/model/ead_exporter.rb------------------>plugins/local/backend/model/ead_exporter.rb
+
 frontend/app/views/site/_branding.html.erb--------->plugins/local/frontend/views/site/_branding.html.erb
+
 public/app/views/shared/_footer.html.erb----------->plugins/local/public/views/shared/_footer.html.erb
+
 public/app/views/shared/_header.html.erb----------->plugins/local/public/views/shared/_header.html.erb
+
 public/app/views/shared/_navigation.html.erb------->plugins/local/public/views/shared/_navigation.html.erb
+
 public/app/views/shared/_record_innards.html.erb--->plugins/local/public/views/shared/_record_innards.html.erb
+
 public/app/views/shared/_request_form.html.erb----->plugins/local/public/views/shared/_request_form.html.erb
 
-The following files only have certain values overridden and cannot break code, unless there is a fundamental
-change in variable naming.
+<h3>The following files only have certain values overridden and cannot break code, unless there is a fundamental
+change in variable naming.</h3>
+
 public/config/locales/en.yml----------------------->plugins/local/public/locales/en.yml
 
-The following files exist only in our instance and are called by changes to plugins above
+<h3>The following files exist only in our instance and are called by changes to plugins above</h3>
 
 plugins/local/public/views/shared/server.test.css
 
