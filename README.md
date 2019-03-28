@@ -18,10 +18,17 @@ change in variable naming.
 public/config/locales/en.yml----------------------->plugins/local/public/locales/en.yml
 
 The following files exist only in our instance and are called by changes to plugins above
+
 plugins/local/public/views/shared/server.test.css
+
 plugins/local/public/views/shared/_takedown.erb
+
 plugins/local/public/views/layout_head.html.erb (this no longer seems to be in the core codebase, but we continue to call it)
+
 plugins/local/public/views/site/_branding.html.erb
+
 plugins/local/public/views/site/_header.html.erb
+
 plugins/local/public/views/site/index.html.erb
+
 plugins/local/public/plugin_init.rb
