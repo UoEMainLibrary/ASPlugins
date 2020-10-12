@@ -21,19 +21,20 @@ class EADSerializer < ASpaceExport::Serializer
       atts.reject! {|k, v| v.nil?}
       xml.send(tag_name, atts) {
 
-        xml.did {
+        # SR- add the data.id to an extptr under unitid
+        data_id = "A_" + data.id.to_s
+        xml.did("id" => data_id) {
+
           if (val = data.title)
             xml.unittitle {  sanitize_mixed_content( val,xml, fragments) }
           end
-
-          if !data.component_id.nil? && !data.component_id.empty?
-	   # SR- add the data.id to an extptr under unitid
-	   xml.unitid data.component_id do
-              xml.extptr("href" => data.id)
-	   end
-	 
-          end
           
+          # SR 2020/09/29 removing this as we have the id going into the did
+          if !data.component_id.nil? && !data.component_id.empty?
+            xml.unitid data.component_id
+            #xml.unitid({"countrycode" => "GB", "repositorycode" => data.mainagencycode})  { xml.text data.component_id}
+          end
+
           if @include_unpublished
             data.external_ids.each do |exid|
               xml.unitid  ({ "audience" => "internal",  "type" => exid['source'], "identifier" => exid['external_id']}) { xml.text exid['external_id']}
@@ -140,7 +141,20 @@ class EADSerializer < ASpaceExport::Serializer
 
             serialize_origination(data, xml, @fragments)
 
-            xml.unitid (0..3).map{|i| data.send("id_#{i}")}.compact.join('.')
+            ##########
+
+            #SR 2020/09/29- adding attrs to UnitId
+            #xml.unitid (0..3).map{|i| data.send("id_#{i}")}.compact.join('.') 
+            #xml.unitid = "<num>#{(0..3).map{|i| data.send("id_#{i}")}.compact.join('.')}</num>"
+            
+            unitid = "<num>#{(0..3).map{|i| data.send("id_#{i}")}.compact.join('.')}</num>"
+            #unitid {(0..3).map{|i| data.send("id_#{i}")}.compact.join('.')}
+            #xml.unitid ({"countrycode" => "GB", "repositorycode" => data.mainagencycode})
+            #xml.unitid ({"countrycode" => "GB", "repositorycode" => data.mainagencycode}) {sanitize_mixed_content(unitid, xml, @fragments) }
+            
+            xml.unitid({"countrycode" => "GB", "repositorycode" => data.mainagencycode})  { xml.text (0..3).map{|i| data.send("id_#{i}")}.compact.join('.')}
+
+            ###########
 
             if @include_unpublished
               data.external_ids.each do |exid|
