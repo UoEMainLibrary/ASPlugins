@@ -9,6 +9,3 @@ Rails.application.config.after_initialize do
     skip_before_action :verify_authenticity_token
   end
 end
-
-
-

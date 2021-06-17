@@ -23,6 +23,16 @@ div.uoelogo, .uoeaslogo {
 }
 
 
+.inline-label {
+  font-weight: bold;
+  font-family: $serif-font;
+}
+
+.inline-label::after {
+  content: "\a";
+  white-space: pre;
+}
+
 
 
 
