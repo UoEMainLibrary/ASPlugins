@@ -28,12 +28,7 @@ div.uoelogo, .uoeaslogo {
   font-family: $serif-font;
 }
 
-.inline-label::after {
+.subnote .inline-label::after {
   content: "\a";
   white-space: pre;
 }
-
-
-
-
-
