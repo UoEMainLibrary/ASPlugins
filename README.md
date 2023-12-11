@@ -19,6 +19,8 @@ public/app/views/shared/_record_innards.html.erb--->plugins/local/public/views/s
 
 public/app/views/shared/_request_form.html.erb----->plugins/local/public/views/shared/_request_form.html.erb
 
+public/app/views/shared/_modal.html.erb----->plugins/local/public/views/shared/_modal.html.erb
+
 <h3>The following files only have certain values overridden and cannot break code, unless there is a fundamental
 change in variable naming.</h3>
 
