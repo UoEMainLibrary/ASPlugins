@@ -8,11 +8,11 @@
   <div class="row">
   <div class="col-sm-8">
       <h1>
-        <% unless request.original_fullpath == '/' %>
-          <a title="Archives Space at Edinburgh" href="<%= AppConfig[:public_proxy_url] %>">
-        <% end %>
-        <%= t('brand.title') %>
-        <% unless request.original_fullpath == '/' %>
+      <% unless request.original_fullpath == '/' %>
+      <a title="Archives Space at Edinburgh" href="<%= AppConfig[:public_proxy_url] %>">
+      <% end %>
+      <%= t('brand.title') %>
+      <% unless request.original_fullpath == '/' %>
           </a>
         <% end %>
       </h1>

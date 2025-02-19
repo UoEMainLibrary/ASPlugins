@@ -3,7 +3,9 @@ body {
 }
 
 #header {
-	
+	background-image: url('/assets/images/your_header_image.png');
+	background-size: cover;
 	background-color: #830065;
+	background-color: opacity: 0.5;
 }
 
