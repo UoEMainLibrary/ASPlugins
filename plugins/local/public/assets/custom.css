@@ -3,9 +3,50 @@ body {
 }
 
 #header {
-	background-image: url('/assets/images/your_header_image.png');
+	background: #830065;
+	background: linear-gradient(rgba(29, 38, 200, 0.8), rgba(195, 55, 100, 0.8)), url('/assets/images/library_01.jpg');
 	background-size: cover;
-	background-color: #830065;
-	background-color: opacity: 0.5;
+        border: none !important;
 }
+#header .logo {
+	float: right;
+    	height: 0px;
+    	text-align: right;
+}
+
+#header .row {
+	border-bottom: 0.25rem solid #830065 !important;
+}
+
+
+
+
+.navbar-default {
+	border-color: #830065 !important; /* Optional */
+	border-radius: 0px !important;
+}
+
+.top-bar {
+	background: #830065 !important;
+	border: #830065 !important;
+}
+
+
+
+
+.navbar-default .navbar-nav > li > a {
+    color: #DDE1E3 !important; /* Change text color */
+    font-size: 1.2rem !important;
+    background: #830065 !important;
+}
+
+#header .uoelogo > img {
+	margin-top: 10px;
+	margin-left: 10px;
+  	width: 500px;
+  	height: auto; /* Keeps aspect ratio */
+}
+
+
+
 
