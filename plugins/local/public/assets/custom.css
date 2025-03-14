@@ -1,12 +1,13 @@
 body {
-    background-color: #DDE1E3; /* Change this to your desired color */
+    background-color: #f6f6f6; /* Change this to your desired color */
 }
 
 #header {
-	background: #830065;
+
 	background: linear-gradient(rgba(29, 38, 200, 0.8), rgba(195, 55, 100, 0.8)), url('/assets/images/library_01.jpg');
 	background-size: cover;
-        border: none !important;
+    border: none !important;
+    height: 250px !important;
 }
 #header .logo {
 	float: right;
@@ -15,11 +16,18 @@ body {
 }
 
 #header .row {
-	border-bottom: 0.25rem solid #830065 !important;
+	border-bottom: none !important;
 }
 
 
+.above-banner{
+    background-color: white;
+    box-sizing: border-box;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    box-sizing: border-box;
 
+}
 
 .navbar-default {
 	border-color: #830065 !important; /* Optional */
@@ -40,9 +48,9 @@ body {
     background: #830065 !important;
 }
 
-#header .uoelogo > img {
+.above-banner .uoelogo > img {
 	margin-top: 10px;
-	margin-left: 10px;
+	margin-left: 20px;
   	width: 500px;
   	height: auto; /* Keeps aspect ratio */
 }

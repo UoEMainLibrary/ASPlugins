@@ -1,23 +1,22 @@
+<div id="above-banner">
+    <div class="row">
+        <div class="col-sm-8">
+            <a class="uoelogo" href="http://www.ed.ac.uk" title="University of Edinburgh Website"><%= image_tag "/assets/uoe/pat_design/library2_final.png", :alt => "University of Edinburgh", style: "margin-top: 1.2rem; margin-bottom: 1.2rem; margin-left: 1.2rem; width: 350px; height: auto;" %></a>
+        </div>
+        <div class="col-sm-1" style="text-align: center; padding-top: 3.50rem;">
+            <p> Accessibility </p>
+        </div>
+        <div class="col-sm-1" style="text-align: center; padding-top: 3.50rem;">
+            <p> Visit Us </p>
+        </div>
+        <div class="col-sm-1" style="text-align: center; padding-top: 3.50rem;">
+            <p style="text-align: center"> FAQs </p>
+        </div>
+
+    </div>
+</div>
 <section  id="header">
-  <div class="branding-container">
-  <div class="uoelogo">
-    <a class="uoelogo" href="http://www.ed.ac.uk" title="University of Edinburgh Website"><%= image_tag "/assets/uoe/pat_design/full_logo_1.gif", :alt => "University of Edinburgh" %></a>
-  </div>
-  </div>
-  <div class="row">
-	  <div class="col-sm-8">
-		  <h1>
-			  <% unless request.original_fullpath == '/' %>
-				  <a title="Archives Space at Edinburgh" href="<%= AppConfig[:public_proxy_url] %>">
-				  <% end %>
-				  <%= t('Welcome to UoE ArchivesSpace') %>
-				  <% unless request.original_fullpath == '/' %>
-					  </a>
-				  <% end %>
-		  </h1>
-	  </div>
-	  <div class="col-sm-4 hidden-xs"><img class="logo" src="<%= asset_path(AppConfig[:pui_branding_img]) %>" alt="<%= AppConfig[:pui_branding_img_alt_text] %>" /></div>
-  </div>
+
 </section>
 
 
