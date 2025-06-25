@@ -1,0 +1,4 @@
+/* hide the default error message, we'll provide our own */
+.recaptcha_error {
+  display: none; 
+}
